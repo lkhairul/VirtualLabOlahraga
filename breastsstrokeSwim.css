@@ -1,0 +1,60 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body 
+{
+    font-family: cursive;
+    background-color: #e4f7ec;
+    color: #000000;
+    text-align: center;
+}
+
+header 
+{
+    background-color: #589572;
+    padding: 20px;
+    color: #fff;
+}
+
+header h1 
+{
+    font-size: 2.5rem;
+}
+
+main .videoPlayer 
+{
+    margin: 50px auto;
+    margin-bottom: 0px;
+    width: 80%;
+}
+
+video 
+{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+main .videoDescription 
+{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #20a359;
+    text-align: justify;
+    padding: 50px;
+}
+
+footer 
+{
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #589572;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
