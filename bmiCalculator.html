@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>BMI Calculator</h1>
+        <div>Track your BMI in a relaxing and calm environment.</div>
+    </header>
+
+
+    <section>
+        <form id="bmiForm">
+            <div class="bmiInput">
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" name="height" required min="0" required max="300">
+            </div>
+            <div class="bmiInput">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight" required min="0" required max="300">
+            </div>
+            <button type="submit">Calculate BMI</button>
+            <button type="reset" id="resetButton">Reset</button>
+        </form>
+
+        <canvas id="bmiCanvas"></canvas>
+        <div id="bmiResult"></div>
+    </section>
+
+    
+    <footer>
+        <p>EAT TO FUEL YOUR BODY, NOT FEED YOUR EMOTIONS!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
