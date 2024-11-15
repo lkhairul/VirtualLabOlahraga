@@ -1,9 +1,8 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <title>Register</title>
     <link rel="stylesheet" href="login.css">
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
 </head>
 <body>
     <header>
@@ -21,14 +20,15 @@
                         <div class="input-group">
                             <input type="password" id="register-password" placeholder="Password" required>
                         </div>
-                        <button type="submit" class="submit-btn">Register</button>
+                        <button type="submit" id="submitData" class="submit-btn">Register</button>
                         <p>Already have an account? <a href="index.html">Login</a></p>
                     </div>
                 </form>
             </div>
         </div>
     </main>
-
-    <script src="register.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script type="module" src="register.js"></script>
 </body>
 </html>
