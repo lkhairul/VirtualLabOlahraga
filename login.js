@@ -1,10 +1,11 @@
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_AUTH_DOMAIN",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_STORAGE_BUCKET",
-    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-    appId: "YOUR_APP_ID"
+    apiKey: "AIzaSyABNfJ3ROpD_wSlj1NXR4Q0S3kQ7nlaOqA",
+    authDomain: "virtual-lab-tpb.firebaseapp.com",
+    projectId: "virtual-lab-tpb",
+    storageBucket: "virtual-lab-tpb.firebasestorage.app",
+    messagingSenderId: "335500094237",
+    appId: "1:335500094237:web:7b7655eceadf584002cff4",
+    measurementId: "G-GZMLPG5PXN"
 };
 
 const app = firebase.initializeApp(firebaseConfig);
