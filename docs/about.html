@@ -3,26 +3,41 @@
     <title>About</title>
     <link rel="stylesheet" href="about.css">
 </head>
-
 <body>
     <header>
-        <h1>About the Creator</h1>
+        <label>
+            <input type="checkbox" id="calmModeToggle">
+            <span></span>
+            <div>Calming Music</div>
+        </label>
+        <h1>About</h1>
     </header>
 
-
-    <section class="identity">
-        <img src="images\potoupi.png" class="creatorPic">
-        <h2>Lutfi Khairul Amal</h2>
-        <p>
-            Saya adalah pembuat dari website virtual lab ini. Website ini dibuat dalam rangka memenuhi penugasan mata kuliah II3140.        </p>
-        <p>
-            Kontak: <a href="mailto:lutfikhairula@gmail.com">lutfikhairula@gmail.com</a>
-        </p>
-    </section>
-
+    <div class="about-container">
+        <section class="identity">
+            <div class="creator-info">
+                <img src="images/potoupi.png" class="creator-pic" alt="Creator Picture">
+                <h2>Lutfi Khairul Amal</h2>
+                <p>
+                    Saya adalah pembuat dari website Virtual Lab ini. Website ini dibuat dalam rangka memenuhi penugasan mata kuliah II3140.
+                </p>
+                <p>
+                    Kontak: <a href="mailto:lutfikhairula@gmail.com">lutfikhairula@gmail.com</a>
+                </p>
+            </div>
+        </section>
+    </div>
 
     <footer>
-        <p>Virtual Lab</p>
+        <nav>
+            <ul class="footerButtons">
+                <li><a href="mainPage.html">Course</a></li>
+                <li><a href="assignment.html">Assignment</a></li>
+                <li><a href="notification.html">Notification</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="about.html"class="active">About</a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>

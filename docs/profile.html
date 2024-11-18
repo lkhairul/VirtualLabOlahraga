@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header>
+        <label>
+            <input type="checkbox" id="calmModeToggle">
+            <span></span>
+            <div>Calming Music</div>
+        </label>
+        <h1>User Profile</h1>
+    </header>
+
+    <div class="profile-container">
+        <div class="profile-section">
+            <div class="profile-header">
+                <div class="avatar">
+                    <img src="https://via.placeholder.com/120" alt="Profile Picture">
+                </div>
+                <div class="info">
+                    <h1 id="user-name">Lutfi Khairul Amal</h1>
+                    <p id="user-id">18222018</p>
+                </div>
+            </div>
+
+            <div class="profile-details">
+                <h2>User Details</h2>
+                <div class="detail-item"><span>Email:</span> <span id="user-email">18222018@std.stei.itb.ac.id</span></div>
+                <div class="detail-item"><span>Class:</span> <span id="user-class">S1 - Sistem dan Teknologi Informasi</span></div>
+            </div>
+        </div>
+
+        <div class="learning-performance">
+            <h2>Learning Performance</h2>
+            <p id="last-online">Last Online: 1 hour ago</p>
+
+            <div class="performance-stats">
+                <div class="stat-item">
+                    <span class="stat-value" id="read-modules">952</span>
+                    <p>Read Modules</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="read-submodules">215</span>
+                    <p>Read Submodules</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="submit-assignments">23</span>
+                    <p>Submit Assignments</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value" id="submit-exams">33</span>
+                    <p>Submit Exams</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <nav>
+            <ul class="footerButtons">
+                <li><a href="mainPage.html">Course</a></li>
+                <li><a href="emptyContent.html">Assignment</a></li>
+                <li><a href="emptyContent.html">Notification</a></li>
+                <li><a href="profile.html"class="active">Profile</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script type="module" src="profile.js"></script>
+</body>
+</html>

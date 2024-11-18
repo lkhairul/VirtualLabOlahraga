@@ -1,29 +1,47 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Video Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breaststroke Swim Technique</title>
     <link rel="stylesheet" href="breaststrokeSwim.css">
 </head>
-
 <body>
     <header>
+        <label>
+            <input type="checkbox" id="calmModeToggle">
+            <span></span>
+            <div>Calming Music</div>
+        </label>
         <h1>Breaststroke Swim Technique</h1>
     </header>
 
-
     <main>
-        <div class="videoPlayer">
-            <video controls>
-                <source src="video\How to swim_  Breaststroke.mp4">
-            </video>
+        <div class="video-container">
+            <div class="video-player">
+                <video controls>
+                    <source src="video/How to swim_  Breaststroke.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-description">
+                <p>
+                    Gaya dada itu unik karena merupakan satu-satunya dari empat gaya renang kompetitif yang pemulihannya (dengan kata lain, bagian pengaturan gaya yang tidak bersifat mendorong) terjadi di dalam air. Akibatnya, gaya hambat yang dihasilkan lebih besar daripada gaya yang lain dan merupakan gaya yang paling lambat di antara semuanya — dan bisa jadi yang paling tidak kenal ampun dalam hal teknik. Inilah mengapa sangat penting untuk mempelajari cara berenang gaya dada dan memahami cara melakukan gaya tersebut dengan bentuk yang benar.
+                </p>
+            </div>
         </div>
-        <p class="videoDescription">
-            Gaya dada itu unik karena merupakan satu-satunya dari empat gaya renang kompetitif yang pemulihannya (dengan kata lain, bagian pengaturan gaya yang tidak bersifat mendorong) terjadi di dalam air. Akibatnya, gaya hambat yang dihasilkan lebih besar daripada gaya yang lain dan merupakan gaya yang paling lambat di antara semuanya — dan bisa jadi yang paling tidak kenal ampun dalam hal teknik. Inilah mengapa sangat penting untuk mempelajari cara berenang gaya dada dan memahami cara melakukan gaya tersebut dengan bentuk yang benar.
-        </p>
     </main>
 
-
     <footer>
-        <p>Virtual Lab</p>
+        <nav>
+            <ul class="footerButtons">
+                <li><a href="mainPage.html"class="active">Course</a></li>
+                <li><a href="assignment.html">Assignment</a></li>
+                <li><a href="notification.html">Notification</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>

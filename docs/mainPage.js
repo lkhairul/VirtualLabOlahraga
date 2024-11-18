@@ -1,20 +1,65 @@
-// Event listener untuk calm mode (tidak ada perubahan)
 document.getElementById('calmModeToggle').addEventListener('change', function() {
-    const calmAudio = document.getElementById('calmAudio');
-    this.checked ? calmAudio.play() : (calmAudio.pause(), calmAudio.currentTime = 0);
+    var audio = document.getElementById('calmAudio');
+    if (this.checked) {
+        audio.play();
+    } else {
+        audio.pause();
+    }
 });
 
-// Event listener untuk search bar
-document.getElementById('search').addEventListener('input', function(event) {
-    const searchQuery = event.target.value.toLowerCase();
-    const courses = document.querySelectorAll('.course a');
+var searchInput = document.getElementById('searchInput');
+var searchForm = document.getElementById('searchForm');
 
-    courses.forEach(course => {
-        const courseName = course.textContent.toLowerCase();
-        if (courseName.includes(searchQuery)) {
-            course.parentElement.style.display = 'block'; // Menampilkan course yang cocok
+searchForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    var query = searchInput.value.toLowerCase().trim();
+    if (query) {
+        searchCourses(query);
+    } else {
+        resetCourses();
+    }
+});
+
+function searchCourses(query) {
+    var courses = document.querySelectorAll('.course');
+    var sections = document.querySelectorAll('.subjectSection');
+    var hasResult = false;
+
+    sections.forEach(function(section) {
+        var sectionHasResult = false;
+        var courseContainer = section.querySelector('.courseContainer');
+        var courses = courseContainer.querySelectorAll('.course');
+
+        courses.forEach(function(course) {
+            var courseTitle = course.querySelector('a').textContent.toLowerCase();
+            if (courseTitle.includes(query)) {
+                course.style.display = 'block';
+                sectionHasResult = true;
+            } else {
+                course.style.display = 'none';
+            }
+        });
+
+        if (sectionHasResult) {
+            section.style.display = 'block';
+            hasResult = true;
         } else {
-            course.parentElement.style.display = 'none'; // Menyembunyikan course yang tidak cocok
+            section.style.display = 'none';
         }
     });
-});
+
+    if (!hasResult) {
+        alert('No courses found matching your search.');
+    }
+}
+
+function resetCourses() {
+    var sections = document.querySelectorAll('.subjectSection');
+    sections.forEach(function(section) {
+        section.style.display = 'block';
+        var courses = section.querySelectorAll('.course');
+        courses.forEach(function(course) {
+            course.style.display = 'block';
+        });
+    });
+}
